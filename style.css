@@ -2,3 +2,9 @@
     height: 40px;
     width: auto;
 }
+
+.fondo{
+
+    background-image: url(fondo.jpg);
+    opacity: 70%;
+}
