@@ -1,10 +1,13 @@
-#logo{
+#logo {
     height: 40px;
     width: auto;
 }
 
-.fondo{
-
+.fondo {
     background-image: url(fondo.jpg);
     opacity: 70%;
+}
+
+.tamano {
+    height: 800px;
 }
