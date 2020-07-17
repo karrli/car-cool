@@ -4,6 +4,7 @@
 }
 
 .fondo {
+    background-color: black;
     background-image: url(fondo.jpg);
     opacity: 60%;
 }
