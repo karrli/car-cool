@@ -40,7 +40,8 @@
             <p class="lead h4 text-center">Cotiza tu auto ideal ajustado a tu presupuesto con nuestro sistema de Intelengencia Artificial.
             </p>
             <hr class="my-4">
-            <form>
+
+          <section>
                 <div class="row">
 
                     <div class="form-group col-md-3">
@@ -53,16 +54,16 @@
           </select>
                     </div>
                     <div class="form-group col-md-3">
-                        <label for="inputState">Año de modelo</label>
-                        <select id="inputState" class="form-control">
+                        <label for="inputStateModel">Año de modelo</label>
+                        <select id="inputStateModel" class="form-control">
             <option style="display:none"> </option>
             <option id="2019">2019</option>
             <option id="2020">2020</option>
           </select>
                     </div>
                     <div class="form-group col-md-3">
-                        <label for="inputState">Caja de velocidades</label>
-                        <select id="inputState" class="form-control">
+                        <label for="inputStateTransmision">Caja de velocidades</label>
+                        <select id="inputStateTransmision" class="form-control">
             <option style="display:none" ></option>
             <option id="manual">Manual</option>
             <option id="auto">Automático</option>
@@ -70,16 +71,14 @@
                     </div>
                     <div class="form-group col-md-3">
                         <label for="inputBudget">Presupuesto</label>
-                        <input type="number" class="form-control dolar" id="inputBudget">
+                        <input type="number" class="form-control dolar" id="inputBudget" min="15000" max="150000">
                     </div>
                 </div>
-
-
-            </form>
+   
             <div class="text-center">
-                <button type="button" class="btn btn-primary btn-lg ">Estrena tu nuevo Auto</button>
+                <button id="login-btn" type="button" class="btn btn-primary btn-lg ">Estrena tu nuevo Auto</button>
             </div>
-
+        </section>
         </div>
     </div>
 
