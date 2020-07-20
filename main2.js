@@ -94,7 +94,7 @@
             div.appendChild(cardBody);
             cardBody.appendChild(model)
             cardBody.appendChild(make)
-            cardBody.appendChild(precio)
+            cardBody.appendChild(precio) //para que me registre el commit xd
 
         }
 
