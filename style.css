@@ -20,3 +20,18 @@
     background-position-y: center;
     padding-left: 25px;
 }
+
+#tamano {
+    width: 90px;
+    height: auto;
+}
+
+.derecha {
+    position: absolute;
+    right: 0;
+    padding-right: 50px;
+}
+
+html {
+    scroll-behavior: smooth;
+}
