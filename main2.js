@@ -13,16 +13,16 @@
     var guardar = document.getElementById('login-btn')
 
 
-    var carros = autos.length; // largo del dataset
-    console.log(marca);
-    console.log(carros)
+  
+    // console.log(marca);
+    // console.log(carros)
         // verificacion de datos
 
     guardar.addEventListener('click', function() { //funcion anonima
-        console.log(marca.value)
-        console.log(anio.value);
-        console.log(caja.value);
-        console.log(presupuesto.value);
+        // console.log(marca.value)
+        // console.log(anio.value);
+        // console.log(caja.value);
+        // console.log(presupuesto.value);
 
 
 
@@ -57,18 +57,17 @@
 
     function lista() {
         for (var i = 0; i < autos.length; i++) {
+            presupuesto = document.getElementById('inputBudget').value
+            presupuesto = parseInt(presupuesto)
+        var minBudget = 0.2* autos[i].price
             if (
-                autos[i].make == marca.value && autos[i].year == anio.value && autos[i].transmision == caja.value //&& autos[i].price >= presupuesto.value * 0.2
+                 autos[i].make == marca.value && autos[i].year == anio.value && autos[i].transmision == caja.value &&  minBudget <= presupuesto  
             ) {
 
                 candidatos.push(autos[i]);
             } else {}
         }
     }
-
-
-
-
 
 
     lista();
@@ -80,21 +79,25 @@
             var div = document.createElement('div');
             div.className = 'card col-lg-3 shadow-lg p-3 mb-5 bg-white rounded';
             var cardBody = document.createElement('div');
-            cardBody.className = 'card-body'
-            var model = document.createElement('h3')
-            model.innerHTML = 'Modelo = ' + candidatos[i].model;
-            model.className = 'card-text'
+            cardBody.className = 'card-body '
+            var img = document.createElement('img')
+            img.className = 'card-img-top';
+            img.setAttribute('src', "carplaceholder.png" )
+            var model = document.createElement('h4')
+            model.innerHTML = 'Modelo: ' + candidatos[i].model;
+            model.className = 'card-text bg-info rounded'
             var make = document.createElement('h5')
             make.innerHTML = candidatos[i].make;
             make.className = 'card-text'
             var precio = document.createElement('h5')
-            precio.innerHTML = 'Precio = $' + candidatos[i].price + '.00';
+            precio.innerHTML = 'Precio: $' + candidatos[i].price + '.00';
             precio.className = 'card-text'
             rowCards.appendChild(div);
             div.appendChild(cardBody);
-            cardBody.appendChild(model)
-            cardBody.appendChild(make)
-            cardBody.appendChild(precio) //para que me registre el commit xd
+            cardBody.appendChild(img);
+            cardBody.appendChild(model);
+            cardBody.appendChild(make);
+            cardBody.appendChild(precio); //para que me registre el commit xd
 
         }
 
