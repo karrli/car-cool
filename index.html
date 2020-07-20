@@ -34,39 +34,39 @@
 
     <div class="jumbotron fondo tamano xd">
 
-
+<!-- Cotizador -->  
         <div class="container">
             <h1 class="display-4 text-center">Somos tu mejor opción</h1>
             <p class="lead h4 text-center">Cotiza tu auto ideal ajustado a tu presupuesto con nuestro sistema de Intelengencia Artificial.
             </p>
             <hr class="my-4">
-<!-- Cotizador -->
-          <section>
+         
+            <form action="#" class="formulario" id="formulario" onsubmit="return false">
+            <fieldset>
                 <div class="row">
-
                     <div class="form-group col-md-3">
-                        <label for="inputState">Marca de tu Auto</label>
-                        <select id="inputState" class="form-control">
+                        <label for="make">Marca de tu Auto</label>
+                        <select id="make" class="form-control">
             <option style="display:none"></option>
-            <option>Nissan</option>
-            <option>Chevrolet</option>
-            <option>Ford</option>
+            <option value="1">Nissan</option>
+            <option value="2">Chevrolet</option>
+            <option value="3">Ford</option>
           </select>
                     </div>
                     <div class="form-group col-md-3">
-                        <label for="inputStateModel">Año de modelo</label>
-                        <select id="inputStateModel" class="form-control">
+                        <label for="year">Año de modelo</label>
+                        <select id="year" class="form-control">
             <option style="display:none"> </option>
-            <option id="2019">2019</option>
-            <option id="2020">2020</option>
+            <option value="1">2019</option>
+            <option value="2">2020</option>
           </select>
                     </div>
                     <div class="form-group col-md-3">
-                        <label for="inputStateTransmision">Caja de velocidades</label>
-                        <select id="inputStateTransmision" class="form-control">
+                        <label for="transmision">Caja de velocidades</label>
+                        <select id="transmision" class="form-control">
             <option style="display:none" ></option>
-            <option id="manual">Manual</option>
-            <option id="auto">Automático</option>
+            <option value="1">Manual</option>
+            <option value="2">Automático</option>
           </select>
                     </div>
                     <div class="form-group col-md-3">
@@ -78,7 +78,9 @@
             <div class="text-center">
                 <button id="login-btn" type="button" class="btn btn-primary btn-lg ">Estrena tu nuevo Auto</button>
             </div>
-        </section>
+        </fieldset>
+            </form>
+       
         </div>
     </div>
 
